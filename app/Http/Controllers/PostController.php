@@ -44,8 +44,14 @@ class PostController extends Controller
     public function dashboard()
     {
         $user_id = Auth::user()->id;
+        
+        // Get all posts for statistics (without pagination)
+        $allPosts = Post::where('user_id', $user_id)->get();
+        
+        // Get paginated posts for table display
         $posts = Post::where('user_id', $user_id)->latest()->paginate(10);
-        return view('admin.dashboard', compact('user_id', 'posts'));
+        
+        return view('admin.dashboard', compact('user_id', 'posts', 'allPosts'));
     }
 
     public function create()

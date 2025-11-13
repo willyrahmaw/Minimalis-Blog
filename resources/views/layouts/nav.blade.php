@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg ">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('blog.index') }}">{{ $settings->blog_name ?? env('APP_NAME', 'My Blog') }}</a>
+        <a class="navbar-brand" href="{{ route('blog.index') }}"><img src="{{ asset('assets/img/wrw.png') }}" alt="Logo" style="width: 30px; height: 30px;"> {{ $settings->blog_name ?? env('APP_NAME', 'My Blog') }}</a>
         
         <!-- Mobile: All items visible -->
         <div class="d-flex align-items-center d-lg-none gap-2">

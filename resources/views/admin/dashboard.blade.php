@@ -136,28 +136,28 @@
         <div class="col-md-3">
             <div class="stat-card">
                 <div class="icon text-primary"><i class="fas fa-file-alt"></i></div>
-                <h2 class="text-primary">{{ $posts->count() }}</h2>
+                <h2 class="text-primary">{{ $allPosts->count() }}</h2>
                 <p>Total Posts</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="stat-card">
                 <div class="icon text-success"><i class="fas fa-check-circle"></i></div>
-                <h2 class="text-success">{{ $posts->where('published', true)->count() }}</h2>
+                <h2 class="text-success">{{ $allPosts->where('published', true)->count() }}</h2>
                 <p>Published</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="stat-card">
                 <div class="icon text-warning"><i class="fas fa-clock"></i></div>
-                <h2 class="text-warning">{{ $posts->where('published', false)->count() }}</h2>
+                <h2 class="text-warning">{{ $allPosts->where('published', false)->count() }}</h2>
                 <p>Draft</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="stat-card">
                 <div class="icon text-info"><i class="fas fa-eye"></i></div>
-                <h2 class="text-info">{{ $posts->sum('views') }}</h2>
+                <h2 class="text-info">{{ $allPosts->sum('views') }}</h2>
                 <p>Total Views</p>
             </div>
         </div>

@@ -120,11 +120,21 @@
 </div>
 
 <!-- CKEditor Script -->
-<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.21.0/full/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('content', {
         height: 400,
-        removeButtons: 'Source'
+        extraPlugins: 'justify',
+        toolbar: [
+            { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Underline', 'Strike', '-', 'RemoveFormat' ] },
+            { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+            { name: 'align', items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+            { name: 'links', items: [ 'Link', 'Unlink' ] },
+            { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule' ] },
+            { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+            { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
+            { name: 'tools', items: [ 'Maximize', 'Source' ] }
+        ]
     });
 </script>
 @endsection

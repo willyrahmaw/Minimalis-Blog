@@ -11,6 +11,7 @@
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
     <meta name="yandexbot" content="index, follow">
+    <link rel="icon" href="{{ asset('assets/img/wrw.png') }}">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
