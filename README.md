@@ -308,3 +308,6 @@ For support and questions:
 ---
 
 **Happy Blogging! 🎉**
+
+Regards,
+Willy Rahma W
